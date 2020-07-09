@@ -2,8 +2,7 @@
 Simulations for the Starshade Rendezvous Probe. 
 
 Notebooks:
-start github page.  include the following notebooks:
- - Completeness:
+ - completeness:
     - integration time for HZ planets (fig 4)
     - HZ completeness (table 5 / fig 9)
     - cumulative completeness (fig 14)
