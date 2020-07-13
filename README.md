@@ -2,13 +2,24 @@
 Simulations for the Starshade Rendezvous Probe. 
 
 Notebooks:
- - completeness:
-    - integration time for HZ planets (fig 4)
+ - HZ_Completeness_Results.ipynb:
     - HZ completeness (table 5 / fig 9)
     - cumulative completeness (fig 14)
-- yields by planet type (fig 15)
 
-- photon counts (fig 5)
-- RA/Dec and observability windows (fig 6,7)
-- metallicity correlation (fig 10,11)
-- (lowest priority; may be put off) targeting strategy (fig 13)
+- Integration Time:    
+    - integration time for HZ planets (fig 4)
+
+- Planet_Yields
+    - yields by planet type (fig 15)
+
+- Fluxes
+   - photon counts (fig 5)
+   
+- Observing Windows
+   - RA/Dec and observability windows (fig 6,7)
+   
+- Metallicity
+   - metallicity correlation (fig 10,11)
+   
+- Targeting Strategy
+   - (lowest priority; may be put off) targeting strategy (fig 13)
