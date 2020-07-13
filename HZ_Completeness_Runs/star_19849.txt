@@ -1,0 +1,74 @@
+args.Table_Path .
+exocat_star['COMMON']:  omicron 2 Eridani
+Finished Importing Libraries
+Completeness_matrix.shape (2, 1, 2, 2, 1, 21, 1, 13, 7)
+
+=============================================
+
+spc_R_array [50. 50.]
+img_SNR_cuts [5. 7.]
+spc_SNR_cuts [20. 20.]
+
+diameter_array [2.37]
+psf_mas_array [65.]
+
+e2e_IFS_throughput_array [0.02328 0.03395]
+e2e_IMG_throughput_array [0.024 0.035]
+
+contrast_array [1.e-10 4.e-11]
+
+IWA_array [103.]
+
+nzodi_array [ 0.   0.5  1.   1.5  2.   2.5  3.   3.5  4.   4.5  5.   5.5  6.   6.5
+  7.   7.5  8.   8.5  9.   9.5 10. ]
+
+planet_radius_array [6371.0]
+
+T_int_array [  34396.45953582   54514.71456309   86400.          136934.77182864
+  217026.98768243  343964.59535822  545147.14563089  864000.
+ 1369347.7182864  2170269.87682428 3439645.95358222 5451471.45630887
+ 8640000.00000001]
+
+=============================================
+
+observing time windows and durations [ 57 191 423 556] [34 36 34 36]
+* observing time array [ 57 191 423 556] [34 36 34 36]
+obs_time_array [ 57 191 423 556]
+Running Planet Monte Carlo
+Starting Detection Loop
+k 0 of 4
+	i_spcR 0 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+	i_spcR 1 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+k 1 of 4
+	i_spcR 0 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+	i_spcR 1 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+k 2 of 4
+	i_spcR 0 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+	i_spcR 1 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+k 3 of 4
+	i_spcR 0 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
+	i_spcR 1 of 2
+		i_diam 0 of 1
+			i_thr 0 of 2
+			i_thr 1 of 2
