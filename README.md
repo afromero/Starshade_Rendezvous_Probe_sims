@@ -6,6 +6,9 @@ Notebooks:
     - HZ completeness (table 5 / fig 9)
     - cumulative completeness (fig 14)
 
+- Binary Selector:
+   - (fig 3)
+   
 - Integration Time:    
     - integration time for HZ planets (fig 4)
 
