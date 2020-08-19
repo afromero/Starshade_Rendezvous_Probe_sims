@@ -16,15 +16,14 @@ class Kepler:
         if LUT_path[-1]=='/': LUT_path = LUT_path[:-1] 
 
         if (not os.path.isfile('%s/Ecc_Anom_LUT.npz'%LUT_path)) or force_new_LUT==True:
-            print ('In Kepler.py:\n\t-Look-up table not found.' )
-            print ('\t-Generating look-up table.')
-            print ('\t-This may take a few minutes.')
-            print ('\t-It only needs to be done once.')
+            print('Look-up table not found.')
+            print('Generating look-up table')
+            print('this may take a few minutes')
             self.Generate_LUT()
 
         # Load LUT
         fl = np.load('%s/Ecc_Anom_LUT.npz'%LUT_path)
-        #print fl.keys()
+        #print(fl.keys())
         self.eccentricity_array = fl['eccentricity_array']
         self.mean_anomaly_array = fl['mean_anomaly_array']
         self.nE_grid            = fl['nE_grid']
@@ -48,12 +47,12 @@ class Kepler:
         eccentric_anomaly_array = np.arange(0., 2.*pi + delta_M/2., delta_M) 
         eccentricity_array = np.arange(0., 1. + delta_e/2.,    delta_e)
         # make a grid of M(E,e)
-        print ('Making grid of points')
+        print('Making grid of points')
         EA_grid, ec_grid = np.meshgrid(eccentric_anomaly_array, eccentricity_array)
         M_grid = self.Mean_anomaly(EA_grid, ec_grid)
         
-        print ('M_grid.shape', M_grid.shape )
-        print ('Interpolating to a new grid')
+        print('M_grid.shape', M_grid.shape )
+        print('Interpolating to a new grid')
         # Now we want to make an evenly spaced E(M,e) grid
         points = np.array( (M_grid.flatten(), ec_grid.flatten()) ).T
         values = EA_grid.flatten()
@@ -61,14 +60,14 @@ class Kepler:
         nM_grid, ne_grid = np.meshgrid(mean_anomaly_array, eccentricity_array)
         nE_grid = griddata( points, values, (nM_grid, ne_grid), method='linear' )
 
-        print ('nE_grid.shape', nE_grid.shape)
+        print('nE_grid.shape', nE_grid.shape)
         
         np.savez('Ecc_Anom_LUT.npz', 
                  eccentricity_array=eccentricity_array, 
                  mean_anomaly_array=mean_anomaly_array, 
                  nE_grid = nE_grid)
 
-        print ('Plotting figures')
+        print('Plotting figures')
         
         figure()
         contourf(EA_grid, ec_grid, M_grid, 20)
@@ -103,7 +102,7 @@ class Kepler:
             E_val = self.get_eccentric_anomaly(eccentricity, M_array[k])
             E_array.append(E_val[0])
         E_array = np.array(E_array)
-        #print E_array
+        #print(E_array)
         
         # Calculate the positions in the orbit plane
         x_p = a_SM * (np.cos(E_array)-eccentricity)

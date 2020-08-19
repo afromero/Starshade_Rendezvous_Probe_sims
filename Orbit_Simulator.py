@@ -130,7 +130,7 @@ class Orbit_Simulator():
         
         HZ_AU = np.array([CMC_calc.r_inner_AU,CMC_calc.r_outer_AU])
         HZ_mas = np.arcsin(HZ_AU * CMC_calc.AU_in_meters / (self.star_model.d_pc * CMC_calc.parsec_in_meters)) / CMC_calc.mas_in_radians
-        orb_radius_mas = np.arcsin(CMC_calc.r_orb_AU * CMC_calc.AU_in_meters / (self.star_model.d_pc * CMC_calc.parsec_in_meters)) / CMC_calc.mas_in_radians
+        orb_radius_mas = np.arcsin(CMC_calc.r_orb_AU[0] * CMC_calc.AU_in_meters / (self.star_model.d_pc * CMC_calc.parsec_in_meters)) / CMC_calc.mas_in_radians
 
         '''
         Save the parts that are used for orbit fitting
